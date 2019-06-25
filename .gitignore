@@ -10,3 +10,5 @@ dmctl.log
 relay_log/*
 vendor
 */*.DS_Store
+
+.idea/
