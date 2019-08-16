@@ -43,6 +43,10 @@ type DummyRelay struct {
 	reloadErr     error
 }
 
+func (d *DummyRelay) GetMeta() relay.Meta {
+	panic("implement me")
+}
+
 // NewDummyRelay creates an instance of dummy Relay.
 func NewDummyRelay(cfg *relay.Config) relay.Process {
 	return &DummyRelay{}
